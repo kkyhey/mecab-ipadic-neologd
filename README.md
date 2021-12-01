@@ -11,6 +11,8 @@ tokenを入力してpasswordを設定することも可能
 docker exec -it mecab-notebook jupyter notebook list  
 ```
 
+環境にて形態素解析の実行  
+新型コロナウイルスやPCR
 ```
 import MeCab
 
@@ -20,10 +22,10 @@ MECAB_ARGS = " -r " + MECAB_SETTING + " -d " + MECAB_DICTIONARY
 
 m = MeCab.Tagger(MECAB_ARGS)
 
-text = "新型コロナウイルスが猛威を振るった2020年以降、PCR検査やワクチン接種が普及した"
+text = "新型コロナウイルスが猛威を振るった2020年にアベノマスクの配布があった。コロナ禍で打撃を受けた飲食業や観光業の活性化を目的としたGoToトラベルが実施されたこともあった。"
 print(m.parse(text))
 ```
-
+![image](https://user-images.githubusercontent.com/32927796/144154065-1a6160f6-fd0f-4818-85f9-df672c367d38.png)
 
 今回使用した形態素解析ツールはこちら  
 mecab-ipadic-NEologd
