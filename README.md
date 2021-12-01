@@ -8,7 +8,11 @@ docker-compose up -d --build
 環境への初回アクセス時にpassword or tokenが必要なため、下記を実行し取得したtokenをアクセス先で入力   
 tokenを入力してpasswordを設定することも可能  
 ```
-docker exec -it mecab-notebook jupyter notebook list
+docker exec -it mecab-notebook jupyter notebook list  
 ```
+
+今回使用した形態素解析ツールはこちら  
+mecab-ipadic-NEologd
+https://github.com/neologd/mecab-ipadic-neologd/blob/master/README.ja.md
 
 
