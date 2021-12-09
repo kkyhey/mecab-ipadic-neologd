@@ -1,3 +1,4 @@
+勉強用に記録
 # mecab-ipadic-neologd  
 リポジトリのあるディレクトリで以下を実行  
 Creating mecab-notebook ... done と表示されていれば環境構築が完了 
@@ -12,7 +13,6 @@ docker exec -it mecab-notebook jupyter notebook list
 ```
 
 環境にて形態素解析の実行  
-新型コロナウイルスやPCR
 ```
 import MeCab
 
